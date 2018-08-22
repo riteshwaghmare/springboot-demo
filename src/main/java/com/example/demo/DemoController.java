@@ -11,4 +11,9 @@ public class DemoController {
 	public String welcome() {
 		return "welcome";
 	}
+	
+	@RequestMapping(value = "/hello", method = RequestMethod.GET)
+	public String helloWorld() {
+		return "Hello World !!!";
+	}
 }
